@@ -36,39 +36,42 @@ Doing it serially now takes roughly 2m19s finding all the primes up to 16 millio
 Full readout:
 
 here we go. Ol'skool serial prime-finder
- 1000000 || time: 2.905756589s || primes: 78498
- 2000000 || time: 7.553869118s || primes: 148933
- 3000000 || time: 13.256930484s || primes: 216816
- 4000000 || time: 19.799640909s || primes: 283146
- 5000000 || time: 27.101634158s || primes: 348513
- 6000000 || time: 35.01149957s || primes: 412849
- 7000000 || time: 43.475854512s || primes: 476648
- 8000000 || time: 52.389431267s || primes: 539777
- 9000000 || time: 1m1.783371376s || primes: 602489
-10000000 || time: 1m11.600970307s || primes: 664579
-11000000 || time: 1m21.85521713s || primes: 726517
-12000000 || time: 1m32.498435842s || primes: 788060
-13000000 || time: 1m43.524305601s || primes: 849252
-14000000 || time: 1m54.942358213s || primes: 910077
-15000000 || time: 2m6.735969736s || primes: 970704
-16000000 || time: 2m18.833899131s || primes: 1031130
+
+*  1000000 || time: 2.905756589s || primes: 78498
+*  2000000 || time: 7.553869118s || primes: 148933
+*  3000000 || time: 13.256930484s || primes: 216816
+*  4000000 || time: 19.799640909s || primes: 283146
+*  5000000 || time: 27.101634158s || primes: 348513
+*  6000000 || time: 35.01149957s || primes: 412849
+*  7000000 || time: 43.475854512s || primes: 476648
+*  8000000 || time: 52.389431267s || primes: 539777
+*  9000000 || time: 1m1.783371376s || primes: 602489
+* 10000000 || time: 1m11.600970307s || primes: 664579
+* 11000000 || time: 1m21.85521713s || primes: 726517
+* 12000000 || time: 1m32.498435842s || primes: 788060
+* 13000000 || time: 1m43.524305601s || primes: 849252
+* 14000000 || time: 1m54.942358213s || primes: 910077
+* 15000000 || time: 2m6.735969736s || primes: 970704
+* 16000000 || time: 2m18.833899131s || primes: 1031130
+
 and now the concurrent way!
- 1000000 || time: 1.748451671s || primes: 78498
- 2000000 || time: 4.009315993s || primes: 148932
- 3000000 || time: 6.62305898s || primes: 216815
- 4000000 || time: 9.495219865s || primes: 283145
- 5000000 || time: 12.797978168s || primes: 348512
- 6000000 || time: 16.14136534s || primes: 412848
- 7000000 || time: 19.637838421s || primes: 476646
- 8000000 || time: 23.600505743s || primes: 539775
- 9000000 || time: 27.201350715s || primes: 602489
-10000000 || time: 31.132531027s || primes: 664576
-11000000 || time: 35.168005782s || primes: 726514
-12000000 || time: 39.293489409s || primes: 788059
-13000000 || time: 43.958292469s || primes: 849249
-14000000 || time: 48.309189131s || primes: 910075
-15000000 || time: 52.894934592s || primes: 970703
-16000000 || time: 57.989160858s || primes: 1031130
+
+*  1000000 || time: 1.748451671s || primes: 78498
+*  2000000 || time: 4.009315993s || primes: 148932
+*  3000000 || time: 6.62305898s || primes: 216815
+*  4000000 || time: 9.495219865s || primes: 283145
+*  5000000 || time: 12.797978168s || primes: 348512
+*  6000000 || time: 16.14136534s || primes: 412848
+*  7000000 || time: 19.637838421s || primes: 476646
+*  8000000 || time: 23.600505743s || primes: 539775
+*  9000000 || time: 27.201350715s || primes: 602489
+* 10000000 || time: 31.132531027s || primes: 664576
+* 11000000 || time: 35.168005782s || primes: 726514
+* 12000000 || time: 39.293489409s || primes: 788059
+* 13000000 || time: 43.958292469s || primes: 849249
+* 14000000 || time: 48.309189131s || primes: 910075
+* 15000000 || time: 52.894934592s || primes: 970703
+* 16000000 || time: 57.989160858s || primes: 1031130
 
 As can be seen, the ARM CPU on the Pi3 is quite faster than the ARM CPU on the Parallella SoC board. Nearly twice as fast running in single thread.
 
