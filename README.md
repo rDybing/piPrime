@@ -1,4 +1,4 @@
-##piPrime
+## piPrime
 
 A small app to time how fast a pi3 using Go can get all primes up to 16 million.
 
