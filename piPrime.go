@@ -21,6 +21,7 @@ func main() {
 	// manually setting CPU cores do nothing after go1.5
 	// runtime.GOMAXPROCS(4)
 	var countTo uint64
+	// set to 1.6 million - not 16 million - to save some time when debugging
 	countTo = 1600000
 	fmt.Println("here we go. Ol'skool serial prime-finder")
 	primeSequential(countTo)
