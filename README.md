@@ -31,7 +31,9 @@ Asked on reddit/r/golang - and got a few helpful replies.
 
 One, siritinga, even included some modified source code, so that is what this version is running. And much faster - using all four CPU cores as intended!
 
-Doing it serially now takes roughly 2m19s finding all the primes up to 16 million - using Go routines in parallel now takes about a quarter of the time at roughly 58s.
+Doing it serially now takes roughly 2m19s finding all the primes up to 16 million - using Go routines in parallel now takes under half of the time at roughly 58s.
+
+Obviously some more optimization may be possible...
 
 Full readout:
 
